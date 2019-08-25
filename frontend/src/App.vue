@@ -1,12 +1,19 @@
 <template>
-  <div id="app" class="container-fluid">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app">
+    <HeaderNavbar></HeaderNavbar>
+    <div class="container-fluid">
+      <router-view/>
     </div>
-    <router-view/>
   </div>
 </template>
+
+<script>
+import HeaderNavbar from './components/HeaderNavbar'
+
+export default {
+  components: {HeaderNavbar}  
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -26,4 +33,5 @@
     }
   }
 }
+.box-shadow { box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05); }
 </style>
