@@ -24,6 +24,11 @@ export default new Router({
       component: () => import('./views/Calculator.vue')
     },
     {
+      path: '/grid',
+      name: 'grid',
+      component: () => import('./views/Grid.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       component: () => import('./views/About.vue')

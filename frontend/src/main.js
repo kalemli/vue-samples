@@ -6,6 +6,7 @@ import router from './router'
 import store from './store'
 import '@/plugins/tooltip'
 import vuetify from '@/plugins/vuetify'
+import '@/plugins/antd'
 
 Vue.config.productionTip = false
 
